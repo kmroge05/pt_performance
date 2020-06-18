@@ -9,7 +9,9 @@
 </head>
 <body>
     <header class="main-header">
-        <h1>Prime Time Performance</h1>
+        <div class="logo">
+            <img src="images/logo-without-bg.png" alt="Prime Time Logo">
+        </div>
         
         <ul class="main-nav">
             <li><a href="#">Home</a></li>
@@ -20,45 +22,82 @@
         </ul>
     </header> 
     
-    <div class="carousel">
-        <img src="images/pt-strong.jpg" alt="Group Flexing">
-        <img src="images/scooter-game.jpg" alt="Kid on a Scooter">
-        <img src="images/group-fitness.jpg" alt="Fitness Group">
-        <img src="images/team-lunge.jpg" alt="Team Training">
+    <!-- Carousel Images -->
+    <div class="carousel-container">
+        <div class="carousel-image">
+            <img src="images/pt-strong.jpg" alt="Group Flexing">
+        </div>
+        <div class="carousel-image">
+            <img src="images/scooter-game.jpg" alt="Kid on a Scooter">
+        </div>
+        <div class="carousel-image">
+            <img src="images/group-fitness.jpg" alt="Fitness Group">
+        </div>
+        <div class="carousel-image">
+            <img src="images/team-lunge.jpg" alt="Team Training">
+        </div>
+    </div>
+    
+    <!-- Carousel Dots -->
+    <div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
     </div>
     
     <main>
-        <div class="services">
+        <!-- Introduction -->
+        <section>
+            <h2>Welcome to Prime Time Performance</h2>
+            <p>At Prime Time, we strive to provide health and fitness training that appeal to the entire family, ages 2 and up! We offer a multitude of services that will accomodate any fitness need.</p>
+            <p>Want to provide a clean, safe environment to set your child on a life-long relationship with physical activity? <br> 
+                Does your child or team need targeted training for their given sport? <br>
+                Have some fitness goals of your own? <br>
+                You can achieve all of this at Prime Time Performance.
+            </p>
+        
+        </section>
+        
+        <!-- Brief information about services -->
+        <section class="services">
+            <h2>Services</h2>
+            
             <div class="group-training">
                 <img src="images/running-kids.jpg" alt="Kids Running">
                 <h3>Group Training</h3>
                 <p>Small group training with other children of a similar age group.</p>
+                <p class="learn-more"><a href="#">Learn More</a></p>
             </div>
 
             <div class="adult-fitness">
                 <img src="images/stepup-woman.jpg" alt="Woman working out">
                 <h3>Adult Total Body Fitness</h3>
                 <p>Adult training utilizing full body circuits to help you reach your fitness goals.</p>
+                <p class="learn-more"><a href="#">Learn More</a></p>
             </div>
 
             <div class="active-start">
                 <img src="images/school-obstacle-course.jpg" alt="Children playing">
                 <h3>Active Start</h3>
                 <p>Activity sessions focused on 5 and 6 year olds that set the foundation for a life of physical activity.</p>
+                <p class="learn-more"><a href="#">Learn More</a></p>
             </div>
 
             <div class="team-training">
                 <img src="images/team-training.jpg" alt="A sports team training">
                 <h3>Team Training</h3>
                 <p>Group training for athletic teams with targeted sport-specific exercises.</p>
+                <p class="learn-more"><a href="#">Learn More</a></p>
             </div>
 
             <div class="individual">
                 <img src="images/plate-sled.jpg" alt="Man working out">
                 <h3>Individual Training</h3>
                 <p>Individualized training crafted specifically for the athlete and his or her goals.</p>
+                <p class="learn-more"><a href="#">Learn More</a></p>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer class="container">
