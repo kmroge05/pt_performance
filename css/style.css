@@ -1,0 +1,91 @@
+/* Web Fonts */
+
+@font-face{
+    font-family: 'Quicksand Medium';
+    src: url('../fonts/Quicksand-Medium.ttf'), url('../fonts/Quicksand-Medium.woff');
+}
+
+
+/* Main Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #2A2C2B;
+    margin: 0;
+    font: 1em/1.5 'Quicksand Medium', Helvetica, 'Calibri Light', sans-serif;
+}
+
+.bulletin {
+    background-color: #374140;
+    color: #fff;
+    text-align: center;
+}
+
+.logo img {
+    height: auto;
+    width: auto;
+    max-height: 100px;
+    max-width: 150px;
+}
+
+.main-nav {
+    border-bottom: solid 1px #374140;
+}
+.carousel-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social {
+    text-align: center;
+}
+
+.main-footer {
+    background-color: #29253C;
+    color: white;
+    padding: 20px;
+}
+.sub-footer {
+    background-color: #374140;
+    color: #fff;
+    padding: 5px;
+}
+
+/* Form Styles */
+
+form {
+    max-width: 480px;
+    margin: 50px auto 25px;
+    padding: 10px 20px;
+    background: #BDC3C7;
+    border-radius: 8px;
+  }
+  
+  form h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+input[type="text"],
+textarea,
+select {
+  background: #f6f7f8;
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 480px) {
+    form {
+        max-width: 600px;
+    }
+}
