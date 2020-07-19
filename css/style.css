@@ -45,11 +45,52 @@ main,
     padding-top: 35px;
 }
 
+.services-background {
+    height: 300px;
+    width: 425px;
+    font-size: 46px;
+    margin-bottom: 30px;
+}
+
+.services-background p {
+    text-shadow: 2px 2px #374140;
+    padding: 50px 0 75px;
+}
+
+#group {
+    background-image: url(../images/running-kids.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#adult {
+    background-image: url(../images/woman-with-dumbbells.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#active {
+    background-image: url(../images/school-obstacle-course.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#team {
+    background-image: url(../images/team-training.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#individual {
+    background-image: url(../images/plate-sled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .srvcs {
     padding-top: 50px;
 }
 .srvcs img {
-    max-width: 100%;
     height: auto;
 }
 
@@ -80,6 +121,7 @@ main,
     background-color: #374140;
     color: #fff;
     text-align: center;
+    margin: -16px;
 }
 
 .logo img {
@@ -185,8 +227,15 @@ button {
     color: #2A2C2B;
 }
 
-.main-nav a:hover {
+.main-nav a:hover:not(#book) {
     border-bottom: solid 1px #2A2C2B;
+}
+
+.services a:link, 
+.services a:visited, 
+.services a:active {
+    text-decoration: none;
+    color: white;
 }
 
 .footer-nav a:link, 
@@ -220,13 +269,22 @@ button {
         display: flex;
     }
 
-    .main-nav li {
+    .main-nav li,
+    .main-nav a {
         padding: 0 8px;
     }
 
-    .main-nav li:nth-child(5) {
+    .main-nav li:nth-child(5) a {
         border: solid 1px  #29253c;
         border-radius: 8px;
+        padding: 8px;
+    }
+
+    .main-nav li:nth-child(5) a:hover {
+        border: none;
+        background-color: #29253C;
+        color: white;
+        padding: 8px;
     }
 
     .services-container {
@@ -248,6 +306,10 @@ button {
         display: flex;
         flex-direction: row;
         flex-grow: 1;
+    }
+
+    .srv-container p {
+        padding-left: 40px;
     }
 
 
