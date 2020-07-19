@@ -23,7 +23,7 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Book Now</a></li>
+                <li><a id="book" href="#">Book Now</a></li>
             </ul>
         </div>
     </header>  
@@ -61,40 +61,25 @@
             <h2>Services</h2>
            
             <div class="services-container">
-                <div class="hover-group">
-                    <img width=425px height=300px src="images/running-kids.jpg" alt="Kids Running">
-                    <div class="overlay">
-                        <div class="group-text">Group Training</div>
-                    </div>
+                <div id="group" class="services-background">   
+                    <a href="services.html#group-training"><p>GROUP TRAINING</p></a>
+                </div>
+                
+                <div id="adult" class="services-background"> 
+                    <a href="services.html#adult-total-body"><p>ADULT FITNESS</p></a>
                 </div>
 
-                <div class="hover-adult">
-                    <img width=425px height=300px src="images/stepup-woman.jpg" alt="Woman working out">
-                    <div class="overlay">
-                        <div class="adult-text">Adult Fitness</div>
-                    </div>
+                <div id="active" class="services-background">
+                    <a href="services.html#active-start"><p>ACTIVE START</p></a>
+                </div> 
+                
+                <div id="team" class="services-background">
+                    <a href="services.html#team-training"><p>TEAM TRAINING</p></a>
                 </div>
 
-                <div class="hover-active">
-                    <img  width=425px height=300px src="images/school-obstacle-course.jpg" alt="Children playing">
-                    <div class="overlay">
-                        <div class="active-text">Active Start</div>
-                    </div>
-                </div>
-
-                <div class="hover-team">
-                    <img  width=425px height=300px src="images/team-training.jpg" alt="A sports team training">
-                    <div class="overlay">
-                        <div class="team-text">Team Training</div>
-                    </div>
-                </div>
-
-                <div class="hover-indiv">
-                    <img  width=425px height=300px src="images/plate-sled.jpg" alt="Man working out">
-                    <div class="overlay">
-                        <div class="indiv-text">Individual Training</div>
-                    </div>
-                </div>
+                <div id="individual" class="services-background">
+                    <a href="services.html#individual-training"><p>INDIVIDUAL TRAINING</p></a> 
+                </div>   
             </div>
         </section>
     </main>
