@@ -50,11 +50,14 @@ main,
     width: 425px;
     font-size: 46px;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .services-background p {
     text-shadow: 2px 2px #374140;
-    padding: 50px 0 75px;
+    margin: 0;
 }
 
 #group {
@@ -238,14 +241,14 @@ button {
     color: white;
 }
 
-.footer-nav a:link, 
-.footer-nav a:visited, 
-.footer-nav a:active {
+.main-footer a:link, 
+.main-footer a:visited, 
+.main-footer a:active {
     text-decoration: none;
     color: white;
 }
 
-.footer-nav a:hover {
+.main-footer a:hover {
     border-bottom: solid 1px white;
 }
 
