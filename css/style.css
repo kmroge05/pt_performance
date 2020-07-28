@@ -254,6 +254,16 @@ button {
     color: white;
 }
 
+.srv-container a:link,
+.srv-container a:active,
+.srv-container a:visited {
+    color: #2A2C2B;
+}
+
+.srv-container a:hover {
+    color: #BDC3C7
+}
+
 .main-footer a:link, 
 .main-footer a:visited, 
 .main-footer a:active {
