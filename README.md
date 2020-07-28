@@ -8,6 +8,10 @@ This is a website for a fitness gym called PrimeTime Performance. It includes a 
 
 ## Featured requirements
 
-1. Media Queries
-2. Flexbox
-3. Image Carousel
+1. Media Queries 
+2. Flexbox on both service sections (Homepage and Services Page)
+3. Image Carousel 
+4. Contact form with Name, Email and Phone Validation
+5. JS Functions that return form validation errors
+6. nth-child selector to style "Book Now" nav button
+ 
