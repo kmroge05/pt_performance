@@ -29,17 +29,17 @@
         </header> 
 
         <main>
-            <form action="contact.html" method="post">
+            <form id="form" action="contact.html" method="post">
                 <h1>Have Questions?</h1>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="sender_name">
+                <label for="name">Name:<span class="error" id="name-error"></span></label>
+                <input type="text" id="name" name="sender_name" placeholder="What is your name?">
                 <br>
-                <label for="email">Email Address:</label>
-                <input type="text" id="email" name="sender_email">
+                <label for="email">Email Address:<span class="error" id="email-error"></span></label>
+                <input type="text" id="email" name="sender_email" placeholder="What is your email?">
                 <br>
-                <label for="">Phone Number:</label>
-                <input type="tel" id="phone" name="sender_phone">
+                <label for="phone">Phone Number:<span class="error" id="phone-error"></span></label>
+                <input type="tel" id="phone" name="sender_phone" placeholder="What is your phone number? (No parentheses or dashes)">
                 <br>
                 <label>How would you like to be contacted?</label>
                 <br>
@@ -51,6 +51,7 @@
                 <br>
                 <label for:"interests">What service are you interested in?</label>
                 <select id="interest" name="sender_interest">
+                    <option value="select">&ndash; &ndash; Select a Service &ndash; &ndash;</option>
                     <option value="active_start">Active Start</option>
                     <option value="adult">Adult Fitness</option>
                     <option value="group">Group Training</option>
@@ -59,10 +60,10 @@
                 </select>
                 <br>
                 <label for="message">Message:</label>
-                <textarea id="message" name="sender_message"></textarea>
+                <textarea id="message" name="sender_message" placeholder="Type message here."></textarea>
                 
                 <div class="button">
-                    <button type="submit">Send</button>
+                    <button type="submit" onclick="return !!(validateName() & validatePhone() & validateEmail())">Send</button>
                 </div>
             </form>
             
@@ -96,5 +97,6 @@
             </div>
             <div class="sub-footer">&copy; 2020 Prime Time Performance</div>
         </footer>
+        <script src="pt.js"></script>
     </body>
 </html>

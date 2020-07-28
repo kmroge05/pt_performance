@@ -105,6 +105,17 @@ main,
     text-decoration: underline;
 }
 
+.srv-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.availibility {
+    font-weight: bold;
+    margin-top: 0;
+    padding: 0;
+}
+
 .owner img {
    display: block; 
    margin-left: auto;
@@ -130,8 +141,8 @@ main,
 .logo img {
     height: auto;
     width: auto;
-    max-height: 100px;
-    max-width: 150px;
+    max-height: 200px;
+    max-width: 300px;
     padding-left: 25px;
 }
 
@@ -143,6 +154,7 @@ main,
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-bottom: 10px; 
     border-bottom: solid 1px #374140;
 }
@@ -184,7 +196,7 @@ form {
 
   }
   
-  form h1 {
+form h1 {
     margin: 0 0 30px 0;
     text-align: center;
   }
@@ -203,6 +215,12 @@ select {
   width: 100%;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    padding-left: 10px;
 }
 
 #phone_preference {
@@ -288,6 +306,14 @@ button {
         background-color: #29253C;
         color: white;
         padding: 8px;
+    }
+
+    .logo img {
+        height: auto;
+        width: auto;
+        max-height: 100px;
+        max-width: 150px;
+        padding-left: 25px;
     }
 
     .services-container {
