@@ -218,6 +218,12 @@ select {
     padding-left: 10px;
 }
 
+.expiration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 #phone_preference {
     margin-bottom: 30px;
 }
